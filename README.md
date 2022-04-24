@@ -124,8 +124,6 @@ chewBBACA.py ExtractCgMLST -i cgMLST_all.tsv -o cgMLST_145 --t 0.99 --g removedG
 This script selects loci and genomes that remained in the Threshold 145 and excludes the validation genomes and loci that were excluded with this Threshold.
 The folder with the output file can be found at: cgMLST_145. This folder contains four files "cgMLST.tsv; cgMLSTschema.txt; mdata_stats.tsv and Presence_Absence.tsv".
 The cgMLST targets can be found at: cgMLST_145/cgMLSTschema.txt It contains the list of 3356 genes in the core genome defined as targets for this scheme. 
-The list with the 3356 cgMLST gene targets with the path added for each locus fasta file to be searched in the schema_seed folder is in the folder:cgMLST_145/gene_targets.txt
-
 
 # Step 5: Minimum Spanning Tree
 For the visualization of results, minimum spanning trees were buitl. Based on the allelic profiles obtained by the cgMLST scheme for each of the 400 genomes minimum spanning trees (MST) were constructed using the software GrapeTree (version 2.1.0) (https://github.com/achtman-lab/GrapeTree/releases) with parameters implemented in MSTree v2 ignoring missing values for the entire strain collection. The cgMLST_145/cgMLST.tsv file contains the allelic profile of the 400 genomes typed by cgMLST.
