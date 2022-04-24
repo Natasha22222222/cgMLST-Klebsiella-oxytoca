@@ -106,7 +106,7 @@ head -n 1 cgMLST_65/cgMLST.tsv > cgMLST_all.tsv
 cgMLST_all.tsv file (cgMLST_all.tsv) contains the allelic profile of the 386 drafts genomes.
 
 # Step 3.2: Evaluation of genome quality
-After concatenation, we used the TestGenomeQuality to assess the impact of each validation genome on candidate loci in order to exclude low quality validation genomes. In this step you may need to define a new Threshold, as well as a new value of the parameter p, because loci that remain after the filters are the ones that will constituted the final scheme.
+After concatenation, we used the TestGenomeQuality to assess the impact of each validation genome on candidate loci in order to exclude low quality validation genomes. In this step you may need to define a new Threshold, as well as a new value of the parameter t, because loci that remain after the filters are the ones that will constituted the final scheme.
 # Command:
 ```
 chewBBACA.py TestGenomeQuality -i cgMLST_all.tsv -n 13 -t 300 -s 5
