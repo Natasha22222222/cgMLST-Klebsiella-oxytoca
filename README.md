@@ -20,14 +20,14 @@ Softwares and Downloads (Main dependencies)
 BLAST 2.12.0+ ftp://ftp.ncbi.nih.gov/blast/executables/blast+/2.5.0/ or above
 Prodigal 2.6.3 https://github.com/hyattpd/prodigal/releases/ or above
 
-Step 1: Schema Creation
+#Step 1: Schema Creation
 Selection of complete genomes for schema creation
 As of March 3, 2022, 22 K. oxytoca complete genome sequences were available at the NCBI (National Center for Biotechnology Information) genome sequence repository (https://www.ncbi.nlm.nih.gov/assembly).
 A list of all complete genomes used to create this protocol can be found in the file Complete_Genomes.xlsx.
 Among the 22 complete genomes, K. oxytoca FDAARGOS_500 reference genome (GCF_003812925.1) was used by Prodigal algorithm as reference to recognize coding sequences (CDs). Prodigal generated the FDAARGOS_500.trn file at this step.
 The FDAARGOS_500 genome was then removed from further analysis.
 Command:
-# create schema
+create schema
 chewBBACA.py CreateSchema -i Complete_Genomes --cpu 46 -o schema_seed --ptf FDAARGOS_500.trn
 The above command uses 46 CPU and creates a preliminary scheme (wgMLST) in the schema_seed folder using the trained product folder FDAARGOS_500.trn that was generated using the reference genome FDAARGOS_500 (GCF_003812925.1) and 21 complete genome sequences. The wgMLST scheme generated contained 9735 loci based on the 21 complete genomes.
 
@@ -60,7 +60,7 @@ This script selects all * loci * present in the selected * Threshold *. The valu
 
 Step 2.3: Creating the core gene list
 This command selects all target genes from the "cgMLST.tsv" spreadsheet.
-# 10 list
+# list
 head -n 1 cgMLST.tsv > Genes_100%_Core_65.txt
 This step generated the file Genes_100%_Core_65.txt. This list needs to be transposed so that each core gene name is reported in a single line:
 Command:
