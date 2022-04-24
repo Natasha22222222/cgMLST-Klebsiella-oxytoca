@@ -60,7 +60,7 @@ With this analysis we define the percentage of loci that will constitute the sch
 chewBBACA.py TestGenomeQuality -i alleleCallMatrix_cg.tsv -n 13 -t 300 -s 5
 ```
 In the Threshold 65 a set of 4085 loci were found to be present in all the analyzed complete genomes. 
-In this stage we chose the loci present in 100% of the complete genomes and the Threshold 65 that limited the loss of the loci in the genomes. In this Threshold (65) 1 complete genomes were removed due to loss of loci.
+In this stage we chose the loci present in 100% of the complete genomes and the Threshold 65 that limited the loss of the loci in the genomes. In this Threshold (65) 1 complete genome were removed due to loss of loci.
 # Command:
 ```
 #run ExtractCgMLST
