@@ -20,7 +20,7 @@ Softwares and Downloads (Main dependencies)
 BLAST 2.12.0+ ftp://ftp.ncbi.nih.gov/blast/executables/blast+/2.5.0/ or above
 Prodigal 2.6.3 https://github.com/hyattpd/prodigal/releases/ or above
 
-#Step 1: Schema Creation
+Step 1: Schema Creation
 Selection of complete genomes for schema creation
 As of March 3, 2022, 22 K. oxytoca complete genome sequences were available at the NCBI (National Center for Biotechnology Information) genome sequence repository (https://www.ncbi.nlm.nih.gov/assembly).
 A list of all complete genomes used to create this protocol can be found in the file Complete_Genomes.xlsx.
