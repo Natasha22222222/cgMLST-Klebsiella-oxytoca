@@ -89,7 +89,7 @@ tail -n+1 Genes_Core_Al.txt | cut -f2 | perl -pe 's: :\n:g' | sort -Vu | awk '{p
 ```
 # Step 3: Scheme Validation (Allele calling)
 For the validation step we selected 386 drafts K. oxytoca genomes that were publicly available in RefSeq (https://www.ncbi.nlm.nih.gov/assembly) in March 2022. The list of all the draft genomes used can be found in the file Genomes_Validation.xlsx.
-We this set of genomes (386 drafts genomes) we repeated the allele call step using only the 3356 candidate target genes.
+We this set of genomes (386 drafts genomes) we repeated the allele call step using only the 4085 candidate target genes.
 # Command:
 ```
 chewBBACA.py AlleleCall -i ../unfinished-genome/ --gl list_genes_core.txt -o ../results_all --cpu 46  -g ../schema_seed/schema_seed --ptf FDAARGOS_500.trn
@@ -97,7 +97,7 @@ chewBBACA.py AlleleCall -i ../unfinished-genome/ --gl list_genes_core.txt -o ../
 The folder unfinished-genome contains the 386 validation drafts genomes used for validation of the scheme.
 
 # Step 3.1: Concatenate the allelic profiles
-The purpose of this step is to concatenate the matrix of the loci that defined the scheme and the matrix of the loci from the validation genomes. Thus, to concatenate the allelic profile matrix obtained from the creation of the scheme cgMLST_65/cgMLST.tsv with the matrix obtained for the validation genomes results_all/ results_20191126T121343/results_alleles.tsv. The following command was used:
+The purpose of this step is to concatenate the matrix of the loci that defined the scheme and the matrix of the loci from the validation genomes. Thus, to concatenate the allelic profile matrix obtained from the creation of the scheme cgMLST_65/cgMLST.tsv with the matrix obtained for the validation genomes results_all/ results_20220319T114751/results_alleles.tsv. The following command was used:
 # Command:
 ```
 #create header
