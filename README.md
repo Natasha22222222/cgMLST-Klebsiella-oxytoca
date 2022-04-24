@@ -112,7 +112,7 @@ After concatenation, we used the TestGenomeQuality to assess the impact of each 
 chewBBACA.py TestGenomeQuality -i cgMLST_all.tsv -n 13 -t 300 -s 5
 ```
 # Step 4: Extracting the Matrix loci
-At this step we chose loci present in 99% (p0.99) of the validation genomes and the Threshold 145 to limit the loss of the loci in the genomes.
+At this step we chose loci present in 99% (--t 0.99) of the validation genomes and the Threshold 145 to limit the loss of the loci in the genomes.
 In Threshold 145 a set of 3356 loci were found to be present in 99% the validation genomes.
 We created another (removedGenomes145thr.txt) file with only the genomes removed at Threshold (145). 
 Using Threshold (145) only 6 draft genomes were removed due to absence of loci targets.
